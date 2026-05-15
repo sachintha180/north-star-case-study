@@ -20,6 +20,8 @@ north-star-case-study/
 │   ├── complaints.csv
 │   └── app_events.csv
 │
+├── graphs/                         Contains seperate graph exports (as PNGs) from 3_r_analytics.ipynb
+│
 ├── notebooks/
 │   ├── 1_data_preparation.ipynb    Data cleaning and standardisation (Python / pandas)
 │   ├── 2_sql_analysis.ipynb        Exploratory SQL queries (R / sqldf)
