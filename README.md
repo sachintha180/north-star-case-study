@@ -33,14 +33,14 @@ north-star-case-study/
 
 ## Notebooks
 
-### 1 — Data Preparation
+### 1 - Data Preparation
 Loads the nine raw CSVs and produces a cleaned version of each. Key steps: zone label standardisation across all tables, timestamp parsing, type coercion for flag and numeric columns, and substitution for missing categorical values. Output is written to a `cleaned/` directory, which is then used by all subsequent notebooks.
 
-### 2 — SQL Analysis
+### 2 - SQL Analysis
 Runs ten SQL queries over the cleaned data using `sqldf` in R, covering delivery status breakdowns, hub and zone performance, complaint rates by service type, vehicle incident rates, and a multi-table join identifying deliveries with both incidents and complaints.
 
-### 3 — R Analytics
+### 3 - R Analytics
 Conducts Pearson correlation tests (training score vs driver rating, battery health vs incident rate, route overrides vs customer rating) and fits an linear regression to predict post-delivery customer ratings. Visualisations produced with `ggplot2` and `plotly`.
 
-### 4 — PyMongo
+### 4 - PyMongo
 Migrates cleaned data into a MongoDB Atlas cluster (`northstar` database) across three collections: `customer_cases`, `delivery_exceptions`, and `app_activity`. Runs four aggregation pipelines, which helps identify complaint severity by zone, repeat complainers, app failure patterns by device type, and incident types linked to complaints.
